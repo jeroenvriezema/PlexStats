@@ -12,13 +12,6 @@ else {
 	die("File config.php not found.");
 }
 
-if (file_exists(dirname(__FILE__) . '/lang.php')) {
-	require_once(dirname(__FILE__) . '/lang.php');
-}
-else {
-	die("File lang.php not found.");
-}
-
 if(basename($_SERVER['PHP_SELF']) != "setup.php") {
 	if(empty($plexWatch['plexWatchDb'])) {
 		echo '<meta http-equiv="refresh" content="0; url=setup.php">';

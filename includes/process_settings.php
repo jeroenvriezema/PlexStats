@@ -89,7 +89,6 @@
         //rewrite data to config.php
         $fp = fopen($file, "w+") or die("Cannot open file $file.");
         fwrite($fp, "<?php\r\r") or die("Cannot write to file $file.");
-        fwrite($fp, "\nrequire_once '$func_file';\n") or die("Cannot write to file $file.");
         fwrite($fp, $data) or die("Cannot write to file $file.");
         fwrite($fp, "\r\r?>") or die("Cannot write to file $file.");
         fclose($fp);
