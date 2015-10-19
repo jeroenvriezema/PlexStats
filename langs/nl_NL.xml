@@ -1,0 +1,413 @@
+<xml version='1.0' encoding='UTF-8'>
+	<!-- Translation Info -->
+	<transInfo>
+		<version>0.7</version>
+		<author>Jeroen Vriezema</author>
+		<date>10-03-2015</date>
+	</transInfo>
+	
+	<!-- Language info -->
+	<langinfo>
+		<code>nl_NL</code>
+		<loc_name>Nederlands</loc_name>
+		<int_name>Dutch</int_name>
+		<siteTitle>PlexStats</siteTitle>
+	</langinfo>
+	
+	<!-- Error strings -->
+	<errors>
+		<authTokenError>Kon geen verbinidng maken met Plex Server. Controleer uw instellingen.</authTokenError>
+		<dbError>Failed to access plexWatch database. Please check your settings.</dbError>
+		<geoError>Cannot access http://www.geoplugin.net.</geoError>
+		<sqliteError>php5-sqlite is not installed. Please install this requirement and restart your webserver before continuing.</sqliteError>
+		<notAvailable>Deze media bestaat niet (meer) in de Plex Database</notAvailable>
+	</errors>
+	
+	<!-- String for the menu. used on all pages -->
+	<menu>
+		<toggleNav>Schakel navigatie</toggleNav>
+		<home>Home</home>
+		<history>Geschiedenis</history>
+		<stats>Statistieken</stats>
+		<users>Gebruikers</users>
+		<charts>Hitlijsten</charts>
+		<settings>Instellingen</settings>
+	</menu>
+	
+	<!-- Strings for Pop-up with Stream Info -->
+	<streamInfo>
+		<title>Stream Info</title>
+		<pScan>p</pScan>
+		<kbps>kbps</kbps>
+		<dts>dts</dts>
+		<streamDetails>
+			<title>Stream Details</title>
+			<videoTitle>Video</videoTitle>
+			<streamType>Stream Type</streamType>
+			<directPlay>Direct Play</directPlay>
+			<videoRes>Video Resolutie</videoRes>
+			<videoCodec>Video Codec</videoCodec>
+			<videoWidth>Video Breedte</videoWidth>
+			<videoHeight>Video Hoogte</videoHeight>
+			<audioTitle>Audio</audioTitle>
+			<audioCodec>Audio Codec</audioCodec>
+			<audioChannels>Audio Kanalen</audioChannels>
+		</streamDetails>
+		<mediaDetails>
+			<title>Media Bron Details</title>
+			<container>Container</container>
+			<resolution>Resolutie</resolution>
+			<bitrate>Bitrate</bitrate>
+		</mediaDetails>
+		<videoDetails>
+			<title>Video Bron Details</title>
+			<width>Breedte</width>
+			<height>Hoogte</height>
+			<aspectRatio>Beeldverhouding</aspectRatio>
+			<videoFrameRate>Video Frame Rate</videoFrameRate>
+			<videoCodec>Video Codec</videoCodec>
+		</videoDetails>
+		<audioDetails>
+			<title>Audio Bron Details</title>
+			<audioCodec>Audio Codec</audioCodec>
+			<audioChannels>Audio Kanalen</audioChannels>
+		</audioDetails>
+	</streamInfo>
+	
+	<!-- General strings / strings that are used multiple times -->
+	<general>
+		<notAvailable>n/a</notAvailable>
+		<view>weergave</view>
+		<views>weergaves</views>
+		<genre>Genre</genre>
+		<genres>Genres</genres>
+		<noResults>Geen Resultaten</noResults>
+		<play>stream</play>
+		<plays>streams</plays>
+		<time>
+			<min>min</min>
+			<mins>min</mins>
+			<hr>uur</hr>
+			<hrs>uur</hrs>
+			<day>dag</day>
+			<days>dagen</days>
+		</time>
+		<shows>
+			<season>Seizoen</season>
+			<episode>Aflevering</episode>
+		</shows>
+	</general>
+	
+	<!-- Strings used for pagination -->
+	<pagination>
+		<itemsToShow>Aantal items per pagina: _MENU_</itemsToShow>
+		<searchBar>Zoeken:</searchBar>
+		<nextPage>Volgende pagina</nextPage>
+		<previousPage>Vorige Pagina</previousPage>
+		<noData>Er is geen data om te weergeven</noData>
+		<entryInfo> _START_ - _END_ van _TOTAL_ items weergegeven</entryInfo>
+	</pagination>
+	
+	<!-- Strings used for table heads, used on multiple pages -->
+	<theads>
+		<date>Datum</date>
+		<user>Gebruiker</user>
+		<title>Titel</title>
+		<platform>Platform</platform>
+		<IPAddr>IP Adres</IPAddr>
+		<streamInfo>I</streamInfo>
+		<started>Gestart op</started>
+		<paused>Gepauzeerd</paused>
+		<stopped>Gestopt</stopped>
+		<duration>Gestopt voor</duration>
+		<completed>Perc. voltooid</completed>
+	</theads>
+	
+	<!-- Strings for the activity window on index.php -->
+	<activity>
+		<activityHeader>Huidige sessies</activityHeader>
+		<noCurrentWatch>Er wordt op het moment niks gekeken.</noCurrentWatch>
+		<local>Lokaal</local>
+		<isWatching>kijkt naar</isWatching>
+		<isPlaying>speelt af</isPlaying>
+		<hasPaused>Gepauzeerd</hasPaused>
+		<isBuffering>buffert</isBuffering>
+		<state>Status</state>
+		<playing>Afspelen</playing>
+		<paused>Gepauzeerd</paused>
+		<buffering>Bufferren</buffering>
+		<directPlay>Direct Play</directPlay>
+		<directStream>Direct Stream</directStream>
+		<transcoding>Transcoderen</transcoding>
+		<transcode>Transcoden</transcode>
+		<video>Video</video>
+		<audio>Audio</audio>
+		<dolby>Dolby Digital</dolby>
+		<stream>Stream</stream>
+		<artist>Artiest</artist>
+		<album>Album</album>
+		<user>gebruiker</user>
+		<users>gebruikers</users>
+	</activity>
+	
+	<!-- Strings for index.php -->
+	<index>
+		<statistics>Statistieken</statistics>
+		<totalFiles>Totaal aantal bestanden</totalFiles>
+		<totalViews>Totaal aantal streams</totalViews>
+		<tvEpisodesCount>Afleveringen</tvEpisodesCount>
+		<headerGeneral>Algemeen</headerGeneral>
+		<statsUser>Gebruiker</statsUser>
+		<statsUsers>Gebruikers</statsUsers>
+		<userCountPre1User>Er is op het moment</userCountPre1User>
+		<userCountPreUsers>Er zijn op het moment</userCountPreUsers>
+		<userCount1User>gebruiker actief</userCount1User>
+		<userCountUsers>gebruikers actief</userCountUsers>
+		<recentlyAdded>Recentelijk Toegevoegd</recentlyAdded>
+		<added></added>
+		<added2>toegevoegd</added2>
+		<yearAgo>jaar geleden</yearAgo>
+		<yearsAgo>jaren geleden</yearsAgo>
+		<monthAgo>maand geleden</monthAgo>
+		<monthsAgo>maanden geleden</monthsAgo>
+		<weekAgo>week geleden</weekAgo>
+		<weeksAgo>weken geleden</weeksAgo>
+		<dayAgo>dag geleden</dayAgo>
+		<daysAgo>dagen geleden</daysAgo>
+		<hourAgo>uur geleden</hourAgo>
+		<hoursAgo>uur geleden</hoursAgo>
+		<minuteAgo>minuut geleden</minuteAgo>
+		<minutesAgo>minuten geleden</minutesAgo>
+		<secondAgo>seconde geleden</secondAgo>
+		<secondsAgo>seconden geleden</secondsAgo>
+	</index>
+	
+	<!-- Strings for stats.php -->
+	<stats>
+		<title>Statistieken</title>
+		<wellheader>Statistieken</wellheader>
+		<files>Bestanden</files>
+		<graphs>Grafieken</graphs>
+		<chartsHourly>Streams per uur</chartsHourly>
+		<last24Hours>Afgelopen 24 uur</last24Hours>
+		<maxPlaysTitle>Streams afgelopen dagen (Per uur)</maxPlaysTitle>
+		<dailyPlaysTitle>Streams per dag</dailyPlaysTitle>
+		<monthlyPlaysTitle>Streams per maand</monthlyPlaysTitle>
+		<userPlaysTitle>Meest actieve gebruikers</userPlaysTitle>
+		<platformPlays>Meest populaire platforms</platformPlays>
+		<!-- See http://php.net/manual/en/function.date.php for time formats -->
+		<timeFormat>%-H:00</timeFormat>
+		<dateFormat>%e %b</dateFormat>
+		<fileDist>Verdeling bestanden</fileDist>
+	</stats>
+	
+	<!-- Strings for users.php -->
+	<users>
+		<user>Gebruiker</user>
+		<lastSeen>Laatst Gezien</lastSeen>
+		<lastIP>Laatst Bekende IP</lastIP>
+		<totalPlays>Totaal Aantal Streams</totalPlays>
+	</users>
+	
+	<!-- Strings for user.php -->
+	<user>
+		<title>Gebruiker</title>
+		<navProfile>Profiel</navProfile>
+		<navIPAddr>IP Adressen</navIPAddr>
+		<navHistory>Geschiedenis</navHistory>
+		<globalStats>Algemene statistieken</globalStats>
+		<platformStats>Platform Statistieken</platformStats>
+		<today>Vandaag</today>
+		<lastWeek>Afgelopen week</lastWeek>
+		<lastMonth>Afgelopen maand</lastMonth>
+		<allTime>Totaal</allTime>
+		<unknownBrowser>Onbekende Browser</unknownBrowser>
+		<recentlyWatched>Geschiedenis</recentlyWatched>
+		<pubIPAddr>IP Adressen</pubIPAddr>
+		<lastSeen>Laatst gezien</lastSeen>
+		<IPAddr>Ip Adres</IPAddr>
+		<playCount>Aantal streams</playCount>
+		<platLS>Platform (Laatst gezien)</platLS>
+		<location>Locatie</location>
+		<notAvailable>n/a</notAvailable>
+		<noResults>Geen resultaten</noResults>
+		<date>Datum</date>
+		<platform>Platform</platform>
+		<iconTitle>Titel</iconTitle>
+		<streamInfo>Stream Info</streamInfo>
+		<started>Gestart</started>
+		<paused>Gepauzeerd</paused>
+		<stopped>Gestopt</stopped>
+		<duration>Looptijd</duration>
+		<completed>Perc. Voltooid</completed>
+		<currentlyWatching>Kijkt nu</currentlyWatching>
+		<dayDisplay>%d-%b</dayDisplay>
+		<dateDisplay>%d-%b-%Y</dateDisplay>
+		<episodes>TV Afleveringen</episodes>
+		<movies>Films</movies>
+		<legend>Legenda</legend>
+		<hour>Uur</hour>
+		<minutes>Min</minutes>
+		<loginHeader>Inloggen</loginHeader>
+		<username>Gebruikersnaam</username>
+		<usernamePlaceholder>Je gebruikersnaam</usernamePlaceholder>
+		<password>Wachtwoord</password>
+		<passwordPlaceholder>Je wachtwoord</passwordPlaceholder>
+		<rememberMe>Onthoud mij</rememberMe>
+		<logIn>Inloggen</logIn>
+		<usernameError>Deze gebruikersnaam is niet juist</usernameError>
+		<passwordError>Dit wachtwoord is niet juist</passwordError>
+		<loginSucces>Succesvol ingelogd</loginSucces>
+		<logOut>Uitloggen</logOut>
+		<admin>Beheerder</admin>
+		<user>Gebruiker</user>
+		<privileges>Rechten</privileges>
+	</user>
+	
+	<!-- Strings for charts.php -->
+	<charts>
+		<top10All>Top 10</top10All>
+		<top10Films>Films Top 10</top10Films>
+		<top10Series>Serie Top 10</top10Series>
+		<top10Episodes>Afleveringen Top 10</top10Episodes>
+	</charts>
+	
+	<!-- Strings for settings.php -->
+	<settings>
+		<menu>
+			<general>Algemeen</general>
+			<PMSDatabase>PMS &amp; Database</PMSDatabase>
+			<authentication>Plex Authenticatie</authentication>
+			<grouping>Groepering</grouping>
+		</menu>
+		<help>
+			<dateFormat>De datumnotatie die PlexStats moet gebruiken.</dateFormat>
+			<timeFormat>De tijdnotatie die PlexStats moet gebruiken.</timeFormat>
+			<formatModal>Opties datum &amp; tijdsnotatie</formatModal>
+			<lang>Selecteer de taal die PlexStats moet gebruiken.</lang>
+			<pmsIP>Plex Media Server IP adres, hostnaam of domein naam</pmsIP>
+			<pmsWebPort>Web poort van Plex Media Server</pmsWebPort>
+			<pmsSecureWebPort>Veilige (HTTPS) poort van Plex Media Server</pmsSecureWebPort>
+			<pmsHTTPSCheck>Gebruik de HTTPS poort van Plex Media Server</pmsHTTPSCheck>
+			<plexWatchDB>Bestandslocatie van de plexWatch database.</plexWatchDB>
+			<authHelp1>Als je PlexStats buiten je eigen netwerk wil gebruiken, zijn een</authHelp1>
+			<authHelp2>gebruikersnaam en wachtwoord vereist.</authHelp2>
+			<globalHistory>Groepering van globale geschiedenis</globalHistory>
+			<userHistory>Groepering van de Gebruikersgeschiedenis</userHistory>
+			<plexStatsUser>Je gewenste gebruikersnaam</plexStatsUser>
+			<plexStatsPass>Je gewenste wachtwoord</plexStatsPass>
+			<charts>Groepeer de hitlijsten</charts>
+			<enableAuth>Vink aan om inloggen te forceren in PlexStats</enableAuth>
+		</help>
+		<versionInfo>Versie Informatie</versionInfo>
+		<watchWebVersion>PlexStats Versie</watchWebVersion>
+		<watchVersion>plexWatch Versie</watchVersion>
+		<transVersion>Nederlandse vertaling</transVersion>
+		<madeBy>Gemaakt door</madeBy>
+		<dateFormat>Datumnotatie</dateFormat>
+		<timeFormat>Tijdnotatie</timeFormat>
+		<langOpt>Taal</langOpt>
+		<themeOpt>Thema</themeOpt>
+		<modal>
+			<header>Instellingen Datum &amp; Tijdnotatie</header>
+			<titleDay>Dag</titleDay>
+			<titleMonth>Maand</titleMonth>
+			<titleYear>Jaar</titleYear>
+			<titleTime>Tijd</titleTime>
+			<desc_d>Numeriek, met nullen voor de getallen</desc_d>
+			<expl_d>01 tot 31</expl_d>
+			<desc_j>Numeriek, zonder nullen voor de getallen</desc_j>
+			<expl_j>1 tot 31</expl_j>
+			<desc_S>Engels achtervoegsel voor de dag van de maand</desc_S>
+			<expl_S>st, nd of th in the 1st, 2nd of 15th.</expl_S>
+			<desc_m>Numeriek, met nullen voor de getallen</desc_m>
+			<expl_m>01 tot 31</expl_m>
+			<desc_n>Numeriek, zonder nullen voor de getallen</desc_n>
+			<expl_n>1 tot 31</expl_n>
+			<desc_F>Compleet uitgeschreven</desc_F>
+			<expl_F>Januari - December</expl_F>
+			<desc_M>Drie letters uitgeschreven</desc_M>
+			<expl_M>Jan - Dec</expl_M>
+			<desc_Y>Numeriek, 4 cijfers</desc_Y>
+			<expl_Y>Eg., 1999, 2003</expl_Y>
+			<desc_y>Numeriek, 2 cijfers</desc_y>
+			<expl_y>Eg., 99, 03</expl_y>
+			<desc_a>am/pm kleine letters</desc_a>
+			<expl_a>am, pm</expl_a>
+			<desc_A>AM/PM hoofdletters</desc_A>
+			<expl_A>AM, PM</expl_A>
+			<desc_g>12-uurs notatie, zonder nullen</desc_g>
+			<expl_g>1-12</expl_g>
+			<desc_h>12-uurs notatie, met nullen</desc_h>
+			<expl_h>01-12</expl_h>
+			<desc_G>24-uurs notatoe, zonder nullen</desc_G>
+			<expl_G>0-23</expl_G>
+			<desc_H>24-uurs notatie, met nullen</desc_H>
+			<expl_H>00-23</expl_H>
+			<desc_i>Minuten, met nullen</desc_i>
+			<expl_i>00-59</expl_i>
+			<desc_s>Seconden, met nullen</desc_s>
+			<expl_s>00-59</expl_s>
+			<desc_T>Afkortingen tijdzone</desc_T>
+			<expl_T>Eg., EST, MDT ...</expl_T>
+		</modal>
+		<headerPmsDb>Plex Media Server &amp; Database Instellingen</headerPmsDb>
+		<pmsIP>PMS IP Adres</pmsIP>
+		<pmsWebPort>PMS Web Poort</pmsWebPort>
+		<pmsSecureWebPort>PMS Veilige Web Poort</pmsSecureWebPort>
+		<pmsHTTPSCheck>Gebruik HTTPS (optioneel)</pmsHTTPSCheck>
+		<plexWatchDB>plexWatch Database</plexWatchDB>
+		<headerAuth>Plex Authenticatie</headerAuth>
+		<headerAuthPlexStats>PlexStats Authenticatie</headerAuthPlexStats>
+		<authUsername>Gebruikersnaam (optioneel)</authUsername>
+		<authPassword>Wachtwoord (optioneel)</authPassword>
+		<authCheckbox>PlexStats authenticatie</authCheckbox>
+		<headerGrouping>Groeperings instellingen</headerGrouping>
+		<globalHistory>Globale Geschiedenis (optioneel)</globalHistory>
+		<userHistory>Gebruikers geschiedenis (optioneel)</userHistory>
+		<charts>Hitlijsten (optioneel)</charts>
+		<btnSave>Opslaan</btnSave>
+		<btnCancel>Annuleren</btnCancel>
+		<saved>Instellingen zijn opgeslagen</saved>
+	</settings>
+	
+	<!-- Strings for the First-time setup wizard -->
+	<start>
+		<title>Get Started</title>
+		<welcome>Welkom bij PlexStats</welcome>
+		<intro>PlexStats maakt het makkelijk om statistieken te bekijken van je Plex server. Laten we beginnen met het controleren van vereisten.</intro>
+		<webServer>Web Server</webServer>
+		<noinfo>No information available</noinfo>
+		<phpVersion>PHP Versie</phpVersion>
+		<sqlite>PHP SQLite Ondersteuning</sqlite>
+		<phpCurl>PHP Curl Ondersteuning</phpCurl>
+		<ssl>SSL Ondersteuning</ssl>
+		<json>PHP JSON Ondersteuning</json>
+		<yes>Ja</yes>
+		<no>Nee (Onbekende fout)</no>
+		<stackExceed>Maximum stack depth exceeded</stackExceed>
+		<underflow>Underflow or the modes mismatch</underflow>
+		<cCharacter>Unexpected control character found</cCharacter>
+		<syntaxError>Syntax fout, misvormde JSON</syntaxError>
+		<malformed>Misvormde UTF-8 karakters, mogelijk onjuist gecodeerd</malformed>
+		<timezone>Tijdzone van jouw server</timezone>
+		<note>N.B</note>
+		<watchTest1>Zorg ervoor dat je</watchTest1>
+		<watchTest2>of hoger hebt geinstalleerd, geconfigureerd en getest voordat je verder gaat. Als alles hierboven groen is, en de tijdzone is gelijk aan je eigen tijdzone kunnen we verder gaan met instellen.</watchTest2>
+		<ready>Ga naar de volgende stap.</ready>
+		<completed>De installatie is voltooid</completed>
+		<completedButton>Ga naar de startpagina</completedButton>
+	</start>
+	
+	<!-- Strings for info.php -->
+	<info>
+		<pageTitle>Info</pageTitle>
+		<directedBy>Regisseur</directedBy>
+		<runtime>Lengte aflvering</runtime>
+		<movieLength>Speeltijd</movieLength>
+		<rated>Kijkwijzer</rated>
+		<writtenBy>Schrijver</writtenBy>
+		<watchHistory>Kijkgeschiedenis van</watchHistory>
+		<studio>Studio / Zender</studio>
+	</info>
+</xml>

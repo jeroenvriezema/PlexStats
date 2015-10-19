@@ -1,0 +1,416 @@
+<xml version='1.0' encoding='UTF-8'>
+	<!-- Translation Info -->
+	<transInfo>
+		<version>0.1</version>
+		<author>Jeroen Vriezema</author>
+		<date>10-02-2015</date>
+	</transInfo>
+	
+	<!-- Language info -->
+	<langinfo>
+		<!-- The locale between <code></code> should correspond with the filename -->
+		<code>en_US</code>
+		<!-- Local language name, e.g. Deutsch -->
+		<loc_name>English</loc_name>
+		<!-- International language name, e.g. German -->
+		<int_name>English</int_name>
+		<!-- Local plexWatch name, is used for the website title -->
+		<siteTitle>plexWatch</siteTitle>
+	</langinfo>
+	
+	<!-- Error strings -->
+	<errors>
+		<authTokenError>Failed to access Plex Media Server. Please check your settings</authTokenError>
+		<dbError>Failed to access plexWatch database. Please check your settings.</dbError>
+		<geoError>Cannot access http://www.geoplugin.net.</geoError>
+		<sqliteError>php5-sqlite is not installed. Please install this requirement and restart your webserver before continuing.</sqliteError>
+		<notAvailable>This media is no longer available in the Plex Media Server database.</notAvailable>
+	</errors>
+	
+	<!-- Strings for the menu. used on all pages -->
+	<menu>
+		<toggleNav>Toggle navigation</toggleNav>
+		<home>Home</home>
+		<history>History</history>
+		<stats>Stats</stats>
+		<users>Users</users>
+		<charts>Charts</charts>
+		<settings>Settings</settings>
+	</menu>
+	
+	<!-- Strings for Pop-up with Stream Info -->
+	<streamInfo>
+		<title>Stream Info</title>
+		<pScan>p</pScan>
+		<kbps>kbps</kbps>
+		<dts>dts</dts>
+		<streamDetails>
+			<title>Stream Details</title>
+			<videoTitle>Video</videoTitle>
+			<streamType>Stream Type</streamType>
+			<directPlay>Direct Play</directPlay>
+			<videoRes>Video Resolution</videoRes>
+			<videoCodec>Video Codec</videoCodec>
+			<videoWidth>Video Width</videoWidth>
+			<videoHeight>Video Height</videoHeight>
+			<audioTitle>Audio</audioTitle>
+			<audioCodec>Audio Codec</audioCodec>
+			<audioChannels>Audio Channels</audioChannels>
+		</streamDetails>
+		<mediaDetails>
+			<title>Media Source Details</title>
+			<container>Container</container>
+			<resolution>Resolution</resolution>
+			<bitrate>Bitrate</bitrate>
+		</mediaDetails>
+		<videoDetails>
+			<title>Video Source Details</title>
+			<width>Width</width>
+			<height>Height</height>
+			<aspectRatio>Aspect Ratio</aspectRatio>
+			<videoFrameRate>Video Frame Rate</videoFrameRate>
+			<videoCodec>Video Codec</videoCodec>
+		</videoDetails>
+		<audioDetails>
+			<title>Audio Source Details</title>
+			<audioCodec>Audio Codec</audioCodec>
+			<audioChannels>Audio Channels</audioChannels>
+		</audioDetails>
+	</streamInfo>
+	
+	<!-- General strings / strings that are used multiple times -->
+	<general>
+		<notAvailable>n/a</notAvailable>
+		<view>view</view>
+		<views>views</views>
+		<genre>Genre</genre>
+		<genres>Genres</genres>
+		<noResults>No Results</noResults>
+		<play>Play</play>
+		<plays>Plays</plays>
+		<time>
+			<min>min</min>
+			<mins>mins</mins>
+			<hr>hr</hr>
+			<hrs>hrs</hrs>
+			<day>Day</day>
+			<days>Days</days>
+		</time>
+		<shows>
+			<season>Season</season>
+			<episode>Episode</episode>
+		</shows>
+	</general>
+	
+	<!-- Strings used for pagination -->
+	<pagination>
+		<itemsToShow>Display _MENU_ items</itemsToShow>
+		<searchBar>Search:</searchBar>
+		<nextPage>Next</nextPage>
+		<previousPage>Previous</previousPage>
+		<noData>No data available in table</noData>
+		<entryInfo>Showing _START_ to _END_ of _TOTAL_ entries</entryInfo>
+	</pagination>
+	
+	<!-- Strings used for table heads, used on multiple pages -->
+	<theads>
+		<date>Date</date>
+		<user>User</user>
+		<title>Title</title>
+		<platform>Platform</platform>
+		<IPAddr>IP Address</IPAddr>
+		<streamInfo>I</streamInfo>
+		<started>Started</started>
+		<paused>Paused</paused>
+		<stopped>Stopped</stopped>
+		<duration>Duration</duration>
+		<completed>Completed</completed>
+	</theads>
+	
+	<!-- Strings for the activity window on index.php -->
+	<activity>
+		<activityHeader>Current Activity</activityHeader>
+		<noCurrentWatch>Nothing is currently being watched.</noCurrentWatch>
+		<local>Local</local>
+		<isWatching>is watching</isWatching>
+		<isPlaying>is playing</isPlaying>
+		<hasPaused>has paused</hasPaused>
+		<isBuffering>is buffering</isBuffering>
+		<state>State</state>
+		<playing>Playing</playing>
+		<paused>Paused</paused>
+		<buffering>Buffering</buffering>
+		<directPlay>Direct Play</directPlay>
+		<directStream>Direct Stream</directStream>
+		<transcoding>Transcoding</transcoding>
+		<transcode>Transcode</transcode>
+		<video>Video</video>
+		<audio>Audio</audio>
+		<dolby>Dolby Digital</dolby>
+		<stream>Stream</stream>
+		<artist>Artist</artist>
+		<album>Album</album>
+		<user>user</user>
+		<users>users</users>
+	</activity>
+	
+	<!-- Strings for index.php -->
+	<index>
+		<statistics>Statistics</statistics>
+		<totalFiles>Total files</totalFiles>
+		<totalViews>Totaal views</totalViews>
+		<headerGeneral>General</headerGeneral>
+		<tvEpisodesCount>TV Episodes</tvEpisodesCount>
+		<statsUser>User</statsUser>
+		<statsUsers>Users</statsUsers>
+		<userCountPreUsers>There are</userCountPreUsers>
+		<userCountPre1User>There is</userCountPre1User>
+		<userCountUsers>active users</userCountUsers>
+		<userCount1User>active user</userCount1User>
+		<recentlyAdded>Recently Added</recentlyAdded>
+		<added>Added</added>
+		<added2></added2>
+		<yearAgo>year ago</yearAgo>
+		<yearsAgo>years ago</yearsAgo>
+		<monthAgo>month ago</monthAgo>
+		<monthsAgo>months ago</monthsAgo>
+		<weekAgo>week ago</weekAgo>
+		<weeksAgo>weeks ago</weeksAgo>
+		<dayAgo>day ago</dayAgo>
+		<daysAgo>days ago</daysAgo>
+		<hourAgo>hour ago</hourAgo>
+		<hoursAgo>hours ago</hoursAgo>
+		<minuteAgo>minute ago</minuteAgo>
+		<minutesAgo>minutes ago</minutesAgo>
+		<secondAgo>second ago</secondAgo>
+		<secondsAgo>seconds ago</secondsAgo>
+	</index>
+	
+	<!-- Strings for stats.php -->
+	<stats>
+		<title>Statistics</title>
+		<wellheader>Statistics</wellheader>
+		<files>Files</files>
+		<graphs>Graphs</graphs>
+		<chartsHourly>Hourly Plays</chartsHourly>
+		<last24Hours>Last 24 Hours</last24Hours>
+		<maxPlaysTitle>Max Hourly Plays</maxPlaysTitle>
+		<dailyPlaysTitle>Daily Plays</dailyPlaysTitle>
+		<monthlyPlaysTitle>Monthly Plays</monthlyPlaysTitle>
+		<userPlaysTitle>Plays per user</userPlaysTitle>
+		<platformPlays>Most popular platforms</platformPlays>
+		<!-- See http://php.net/manual/en/function.date.php for time formats -->
+		<timeFormat>%-I:00 %p</timeFormat>
+		<dateFormat>%b %e</dateFormat>
+		<fileDist>File distribution</fileDist>
+	</stats>
+	
+	<!-- Strings for users.php -->
+	<users>
+		<user>User</user>
+		<lastSeen>Last Seen</lastSeen>
+		<lastIP>Last Known IP</lastIP>
+		<totalPlays>Total Plays</totalPlays>
+	</users>
+	
+	<!-- Strings for user.php -->
+	<user>
+		<title>User</title>
+		<navProfile>Profile</navProfile>
+		<navIPAddr>IP Addresses</navIPAddr>
+		<navHistory>History</navHistory>
+		<globalStats>Global Stats</globalStats>
+		<platformStats>Platform Stats</platformStats>
+		<today>Today</today>
+		<lastWeek>Last week</lastWeek>
+		<lastMonth>Last month</lastMonth>
+		<allTime>All Time</allTime>
+		<unknownBrowser>Unknown Browser</unknownBrowser>
+		<recentlyWatched>History</recentlyWatched>
+		<pubIPAddr>IP Addresses</pubIPAddr>
+		<lastSeen>Last seen</lastSeen>
+		<IPAddr>Ip Address</IPAddr>
+		<playCount>Play Count</playCount>
+		<platLS>Platform (Last Seen)</platLS>
+		<location>Location</location>
+		<notAvailable>n/a</notAvailable>
+		<noResults>No Results</noResults>
+		<date>Date</date>
+		<platform>Platform</platform>
+		<iconTitle>Title</iconTitle>
+		<streamInfo>Stream Info</streamInfo>
+		<started>Started</started>
+		<paused>Paused</paused>
+		<stopped>Stopped</stopped>
+		<duration>Duration</duration>
+		<completed>Completed</completed>
+		<currentlyWatching>Currently watching...</currentlyWatching>
+		<dayDisplay>%m-%b</dayDisplay>
+		<dateDisplay>%Y-%b-%d</dateDisplay>
+		<episodes>Episodes</episodes>
+		<movies>Movies</movies>
+		<legend>Legend</legend>
+		<hour>Hours</hour>
+		<minutes>Minutes</minutes>
+		<loginHeader>Login</loginHeader>
+		<username>Username</username>
+		<usernamePlaceholder>Your username</usernamePlaceholder>
+		<password>Password</password>
+		<passwordPlaceholder>Your password</passwordPlaceholder>
+		<rememberMe>Remeber me</rememberMe>
+		<logIn>Log in</logIn>
+		<usernameError>Wrong username</usernameError>
+		<passwordError>Wrong password</passwordError>
+		<loginSucces>You are logged in</loginSucces>
+		<logOut>Log out</logOut>
+		<admin>Admin</admin>
+		<user>User</user>
+		<privileges>Privilege</privileges>
+	</user>
+	
+	<!-- Strings for charts.php -->
+	<charts>
+		<top10All>Top 10 (All Time)</top10All>
+		<top10Films>Top 10 Films (All Time)</top10Films>
+		<top10Series>Top 10 TV Shows (All Time)</top10Series>
+		<top10Episodes>Top 10 TV Episodes (All Time)</top10Episodes>
+	</charts>
+	
+	<!-- Strings for settings.php -->
+	<settings>
+		<menu>
+			<general>General</general>
+			<PMSDatabase>PMS &amp; Database</PMSDatabase>
+			<authentication>Plex Authentication</authentication>
+			<grouping>Grouping</grouping>
+		</menu>
+		<help>
+			<dateFormat>The date display format PlexStats should use.</dateFormat>
+			<timeFormat>The time display format PlexStats should use.</timeFormat>
+			<formatModal>Date &amp; Time format options</formatModal>
+			<lang>Select the language PlexStats should use.</lang>
+			<pmsIP>Plex Media Server IP address, hostname or domain name</pmsIP>
+			<pmsWebPort>Plex Media Server's web port</pmsWebPort>
+			<pmsSecureWebPort>Plex Media Server's secure web port</pmsSecureWebPort>
+			<pmsHTTPSCheck>Use Plex Media Server's secure web port</pmsHTTPSCheck>
+			<plexWatchDB>File location of your plexWatch database.</plexWatchDB>
+			<authHelp1>If you would like to access plexWatch/Web on other networks, a</authHelp1>
+			<authHelp2>username and password are required.</authHelp2>
+			<globalHistory>Enable global history grouping</globalHistory>
+			<userHistory>Enable user history grouping</userHistory>
+			<plexStatsUser>Your desired username</plexStatsUser>
+			<plexStatsPass>Your desired password</plexStatsPass>
+			<charts>Enable charts grouping</charts>
+			<enableAuth>Check to enable PlexStats authentication</enableAuth>
+		</help>
+		<versionInfo>Version Information</versionInfo>
+		<watchWebVersion>PlexStats Version</watchWebVersion>
+		<watchVersion>plexWatch Version</watchVersion>
+		<transVersion>English language file</transVersion>
+		<madeBy>made by</madeBy>
+		<dateFormat>Date Format</dateFormat>
+		<timeFormat>Time Format</timeFormat>
+		<langOpt>Language</langOpt>
+		<themeOpt>Theme</themeOpt>
+		<modal>
+			<header>Date &amp; Time Format Options</header>
+			<titleDay>Day</titleDay>
+			<titleMonth>Month</titleMonth>
+			<titleYear>Year</titleYear>
+			<titleTime>Time</titleTime>
+			<desc_d>Numeric, with leading zeros</desc_d>
+			<expl_d>01 to 31</expl_d>
+			<desc_j>Numeric, without leading zeros</desc_j>
+			<expl_j>1 to 31</expl_j>
+			<desc_S>The English suffix for the day of the month</desc_S>
+			<expl_S>st, nd or th in the 1st, 2nd or 15th.</expl_S>
+			<desc_m>Numeric, with leading zeros</desc_m>
+			<expl_m>01 to 31</expl_m>
+			<desc_n>Numeric, without leading zeros</desc_n>
+			<expl_n>1 to 31</expl_n>
+			<desc_F>Textual full</desc_F>
+			<expl_F>January - December</expl_F>
+			<desc_M>Textual three letters</desc_M>
+			<expl_M>Jan - Dec</expl_M>
+			<desc_Y>Numeric, 4 digits</desc_Y>
+			<expl_Y>Eg., 1999, 2003</expl_Y>
+			<desc_y>Numeric, 2 digits</desc_y>
+			<expl_y>Eg., 99, 03</expl_y>
+			<desc_a>am/pm Lowercase</desc_a>
+			<expl_a>am, pm</expl_a>
+			<desc_A>AM/PM Uppercase</desc_A>
+			<expl_A>AM, PM</expl_A>
+			<desc_g>Hour, 12-hour, without leading zeros</desc_g>
+			<expl_g>1-12</expl_g>
+			<desc_h>Hour, 12-hour, with leading zeros</desc_h>
+			<expl_h>01-12</expl_h>
+			<desc_G>Hour, 24-hour, without leading zeros</desc_G>
+			<expl_G>0-23</expl_G>
+			<desc_H>Hour, 24-hour, with leading zeros</desc_H>
+			<expl_H>00-23</expl_H>
+			<desc_i>Minutes, with leading zeros</desc_i>
+			<expl_i>00-59</expl_i>
+			<desc_s>Seconds, with leading zeros</desc_s>
+			<expl_s>00-59</expl_s>
+			<desc_T>Timezone abbreviation</desc_T>
+			<expl_T>Eg., EST, MDT ...</expl_T>
+		</modal>
+		<headerPmsDb>Plex Media Server &amp; Database Settings</headerPmsDb>
+		<pmsIP>PMS IP Address</pmsIP>
+		<pmsWebPort>PMS Web Port</pmsWebPort>
+		<pmsSecureWebPort>PMS Secure Web Port</pmsSecureWebPort>
+		<pmsHTTPSCheck>Use HTTPS (optional)</pmsHTTPSCheck>
+		<plexWatchDB>plexWatch Database</plexWatchDB>
+		<headerAuth>Plex Authentication</headerAuth>
+		<headerAuthPlexStats>PlexStats Authentication</headerAuthPlexStats>
+		<authUsername>Username (optional)</authUsername>
+		<authPassword>Password (optional)</authPassword>
+		<authCheckbox>PlexStats authentication</authCheckbox>
+		<headerGrouping>Grouping Settings</headerGrouping>
+		<globalHistory>Global History (optional)</globalHistory>
+		<userHistory>User History (optional)</userHistory>
+		<charts>Charts (optional)</charts>
+		<btnSave>Save</btnSave>
+		<btnCancel>Cancel</btnCancel>
+		<saved>Settings saved</saved>
+	</settings>
+	
+	<!-- Strings for the First-time setup wizard -->
+	<start>
+		<title>Get Started</title>
+		<welcome>Welcome to plexWatch/Web</welcome>
+		<intro>PlexWatch/Web makes it easy to view in-depth historical statistics and activity of your Plex Media Server. Let's get started by checking for some requirements.</intro>
+		<webServer>Web Server</webServer>
+		<noinfo>No information available</noinfo>
+		<phpVersion>PHP Version</phpVersion>
+		<sqlite>PHP SQLite Support</sqlite>
+		<phpCurl>PHP Curl Support</phpCurl>
+		<ssl>SSL Support</ssl>
+		<json>PHP JSON Support</json>
+		<yes>Yes</yes>
+		<no>No (Unknown Error)</no>
+		<stackExceed>Maximum stack depth exceeded</stackExceed>
+		<underflow>Underflow or the modes mismatch</underflow>
+		<cCharacter>Unexpected control character found</cCharacter>
+		<syntaxError>Syntax error, malformed JSON</syntaxError>
+		<malformed>Malformed UTF-8 characters, possibly incorrectly encoded</malformed>
+		<timezone>Your server's timezone</timezone>
+		<note>Note</note>
+		<watchTest1>Please ensure you have installed, configured and tested</watchTest1>
+		<watchTest2>or above before continuing. If all requirements above are green and the timezone shown matches your timezone you can move forward by filling in a few key configuration options now.</watchTest2>
+		<ready>I'm ready to go.</ready>
+		<completed>Installation completed succesfully</completed>
+		<completedButton>Go to the frontpage</completedButton>
+	</start>
+	
+	<!-- Strings for info.php -->
+	<info>
+		<pageTitle>Info</pageTitle>
+		<directedBy>Directed by</directedBy>
+		<runtime>Runtime</runtime>
+		<movieLength>Runtime</movieLength>
+		<rated>Rated</rated>
+		<writtenBy>Written by</writtenBy>
+		<watchHistory>Watching history for</watchHistory>
+	</info>
+</xml>

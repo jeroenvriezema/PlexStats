@@ -1,0 +1,449 @@
+/*
+THEME INFO
+===============================
+Name: Plex White
+Author: Jeroen Vriezema
+===============================
+*/
+
+body {
+	background: #F9F9F9;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: -1px;
+}
+
+a {
+	color: #ff8a00;
+}
+
+a:hover {
+	color: #ff8a00;
+	text-decoration: none;
+}
+
+.navbar-default {
+	background-color: #323232;
+	border-radius: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border: 0;
+	z-index: 1000;
+}
+
+.navbar-default .container {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin: 0 auto;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #ff8a00;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus{
+	background-color: #323232;
+	color: #ff8a00;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.well {
+	border-radius: 6px;
+	background-color: #fff;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,0.08);
+	border: 0;
+	position: relative;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="password"],
+select {
+	color: #999!important;
+	background: #fcfcfc!important;
+	border: solid 1px #e0e0e0!important;
+	border-radius: 2px!important;
+	box-shadow: inset 2px 2px 3px 0px rgba(0,0,0,0.03)!important;
+	clear: both;
+}
+
+.well h2 {
+	font-weight: 100;
+	color: #ff8a00;
+	letter-spacing: -1px;
+}
+
+.well h3 {
+	color: #484848;
+}
+
+#loadActivity .alert {
+	border-radius: 0px;
+	border: 1px solid #ddd;
+	background: #f5f5f5;
+}
+
+.recentlyAdded .row {
+	text-align: center;
+	margin: 10px auto;
+}
+.recentlyAdded .row div {
+	display: inline-block;
+	margin: 10px;
+}
+
+.xchart .color0 rect, .xchart .color0 circle {
+	fill: #ff8a00;
+}
+
+.xchart .color0 .line {
+	stroke: #ff9d2e;
+}
+.xchart .color0 .fill {
+	fill: rgba(255, 157, 46, 0.10);
+}
+
+.page-header {
+	margin-top: 100px;
+	border: 0;
+}
+
+.page-header h1 {
+	color: #484848;
+	text-align: center;
+	font-size: 46px;
+	line-height: 52px;
+}
+
+.progress {
+	border-radius: 0;
+	box-shadow: none;
+	background: #EBEDEF;
+}
+
+.progress-bar {
+	box-shadow: none;
+	color: #fff;
+}
+
+.session-info {
+	background-color: #f9f9f9;
+}
+
+.btn-primary {
+	background: #ff8a00;
+	border-bottom: solid 3px #e57c00!important;
+}
+.btn-primary:active, .btn-primary:hover, .btn-primary:focus {
+	background: linear-gradient(to bottom, #f2b63a 0%, #f58e39 100%);
+}
+
+.btn, .btn-block {
+	text-transform: uppercase;
+	padding-top: 5px!important;
+	padding-bottom: 5px!important;
+	border-radius: 2px;
+}
+
+.btn-success, .btn-danger, .btn-primary {
+	border-top: none!important;
+	border-left: none!important;
+	border-right: none!important;
+}
+
+.btn-success {
+	border-bottom: 3px solid #378137;
+}
+
+.btn-danger {
+	border-bottom: 3px solid #a32824;
+}
+
+
+
+.pagination>.disabled>a,
+.pagination>.disabled>a:focus,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>span,
+.pagination>.disabled>span:focus,
+.pagination>.disabled>span:hover {
+	background: rgba(0, 0, 0, 0.03);
+	color: #AAA;
+	border: 1px solid #ECECEC;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+}
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+	color: #fff;
+	background: #ff8a00;
+	border: 1px solid #ff8a00;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after {
+	color: #ff8a00;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+	color: #ff8a00;
+	border: 1px solid #ECECEC;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.charts-instance-position-circle {
+	border-top: 50px solid #ff8a00;
+}
+
+.charts h3 {
+	margin: 50px 0;
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #ccc;
+	
+}
+
+.charts .col {
+	border: 0 1px solid #ccc;
+}
+
+.charts .media-object {
+	height: 150px;
+	width: 100px;
+}
+
+#globStats h3 {
+	color: #ccc;
+}
+
+.tab-content .chart{
+	margin-bottom: 50px;
+}
+
+.tab-content .col {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.tab-content .row h3 {
+	text-align: center;
+}
+
+.totalTime h5 {
+	border: 0;
+	box-shadow: none;
+	margin: 0 5px;
+}
+
+#recentlyWatched .platformImage {
+	margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+	.navbar-default .container {
+		width: 750px;
+	}
+	
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 720px) and (orientation:landscape) {
+	.login-inner .username, .login-inner .password {
+		font-size: 18px;
+		line-height: 50px;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation:portrait) {
+	.login-inner .username, .login-inner .password {
+		font-size: 18px;
+		line-height: 50px;
+	}
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  .login-inner .username, .login-inner .password {
+		font-size: 20px;
+		line-height: 50px;
+	}
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  .login-inner .username, .login-inner .password {
+		font-size: 20px;
+		line-height: 50px;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.navbar-default .container {
+		width: 970px;
+	}
+	.well {
+		padding: 40px 20px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.navbar-default .container {
+		width: 1170px;
+	}
+	.well {
+		padding: 40px 60px!important;
+	}
+	input[type="text"],
+	input[type="search"],
+	input[type="password"],
+	select {
+		padding: 10px!important;
+		height: 44px!important;
+	}
+	body {
+		letter-spacing: 0;
+	}
+}
+
+.login-form {
+	border-radius: 6px;
+}
+
+.login p{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	border-radius: 4px 4px 0 0;
+	padding: 10px;
+	font-weight: 100;
+	color: #ff8a00;
+	font-size: 20px;
+}
+
+.login-inner {
+	margin-top: 20px;
+	width: 350px;
+}
+
+.login-inner .text {
+	display: none;
+}
+
+.login-inner .username {
+	border-top-left-radius: 4px!important;
+	border-top-right-radius: 4px!important;
+	border-bottom-left-radius: 0!important;
+	border-bottom-right-radius: 0!important;
+	box-shadow: none!important;
+	background-color: #fff!important;
+	border-bottom: solid 0,5px #e0e0e0!important;
+	padding: 0;
+}
+
+.login-inner .password {
+	border-top-left-radius: 0!important;
+	border-top-right-radius: 0!important;
+	border-bottom-left-radius: 4px!important;
+	border-bottom-right-radius: 4px!important;
+	box-shadow: none!important;
+	border-top: none!important;
+	background-color: #fff!important;
+	padding: 0;
+}
+
+div.text-input {
+	margin: 0;
+}
+
+.col-sm-offset-5 {
+	margin: 0;
+}
+
+.login-inner .col-sm-7, .login-inner input[type="text"], .login-inner input[type="password"] {
+	width: 100%;
+}
+.login-inner input {
+	text-align: center;
+}
+
+.login .login-btn {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left: 0;
+	padding: 0;
+}
+
+.login .btn {
+	width: 100%;
+	border: 0;
+	background-color: #ff8a00;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	display: inline-block;
+	color: #fff;
+	padding: 10px!important;
+	border-bottom: solid 3px #e57c00;
+	font-weight: 700;
+}
+
+.login .btn:hover {
+	background: linear-gradient(to bottom, #f2b63a 0%, #f58e39 100%);
+}
+
+.checkbox {
+	margin-top: 20px!important;
+	width: 100%;
+	text-align: center;
+}
+
+.page-top {
+	margin-top: 100px;
+	margin-bottom: -70px;
+	text-align: center;
+	border-radius: 0;
+}
+
+.carousel-control.left, .carousel-control.right {
+	display: none;
+}
+
+.carousel-control {
+	opacity: 1;
+}
+
+.carousel-inner .chart-info {
+	width: 70.5%;
+	height: 130px;
+}
+.carousel-inner .charts-number {
+	background: rgba(255, 157, 46, 0.7);
+	top: 0;
+	right: 0;
+	margin: 0;
+	height: 130px;
+	width: 100px;
+	text-align: center;
+	z-index: 2;
+}

@@ -1,0 +1,398 @@
+/*
+THEME INFO
+===============================
+Name: Dark Plex
+Author: Jeroen Vriezema
+===============================
+*/
+
+body {
+	background: #1f1f1f;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: -1px;
+	color: #eee;
+}
+
+a {
+	color: #cc7b19;
+}
+
+a:hover {
+	color: #e9a049;
+}
+
+.navbar-default {
+	background-color: #141312;
+	border-radius: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border: 0;
+	z-index: 1000;
+	box-shadow: 0 0 0 3px rgba(0,0,0,.2);
+}
+
+.navbar-default .container {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin: 0 auto;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #EEEEEE;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover{
+	background-color: transparent;
+	color: #EEEEEE;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #999;
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+	background-color: transparent!important;
+}
+
+.well {
+	border-radius: 0px;
+	background-color: #141414;
+	box-shadow: 0;
+	border: 1px solid #242424;
+	position: relative;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="password"],
+select {
+	color: #999!important;
+	background: #3a3a3a!important;
+	border: 0!important;
+	border-radius: 14.5px!important;
+	box-shadow: inset 2px 2px 3px 0px rgba(0,0,0,0.03)!important;
+	clear: both;
+}
+
+.well h2 {
+	font-weight: 100;
+	color: #eee;
+	letter-spacing: -1px;
+}
+
+.well h3 {
+	color: #e9a049;
+}
+
+#loadActivity .alert {
+	border-radius: 0px;
+	background: #282828;
+	border-top: 1px solid #2d2d2d;
+	border-bottom: 1px solid #0e0e0e;
+	border-left: none;
+	border-right: none;
+	color: #999;
+	text-transform: uppercase;
+}
+
+.recentlyAdded .row {
+	text-align: center;
+	margin: 10px auto;
+}
+.recentlyAdded .row div {
+	display: inline-block;
+	margin: 10px;
+}
+
+.recentlyAdded h3 {
+	color: #eee;
+	font-size: 15px;
+}
+
+.xchart .color0 rect, .xchart .color0 circle {
+	fill: #e9a049;
+}
+
+.xchart .color0 .line {
+	stroke: #e9a049;
+}
+.xchart .color0 .fill {
+	fill: rgba(255, 157, 46, 0.10);
+}
+
+.page-header {
+	margin-top: 100px;
+	border: 0;
+}
+
+.page-header h1 {
+	color: #eee;
+	text-align: center;
+	font-size: 46px;
+	line-height: 52px;
+}
+.progress {
+	border-radius: 0;
+	box-shadow: none;
+	background: #666;
+}
+
+.progress-bar {
+	box-shadow: none;
+	color: #fff;
+}
+
+.session-info {
+	background-color: #282828;
+}
+
+.btn-primary {
+	background: #cc7b19;
+	
+}
+.btn-primary:active, .btn-primary:hover, .btn-primary:focus {
+	background: linear-gradient(to bottom, #f2b63a 0%, #f58e39 100%);
+}
+
+.btn, .btn-block {
+	text-transform: uppercase;
+	padding-top: 5px!important;
+	padding-bottom: 5px!important;
+	border-radius: 15px;
+}
+
+.btn-success, .btn-danger, .btn-primary {
+	border-top: none!important;
+	border-left: none!important;
+	border-right: none!important;
+}
+
+.btn-success {
+
+}
+
+.btn-danger {
+
+}
+
+
+
+.pagination>.disabled>a,
+.pagination>.disabled>a:focus,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>span,
+.pagination>.disabled>span:focus,
+.pagination>.disabled>span:hover {
+	background: #323232;
+	color: #000;
+	border: 1px solid #ECECEC;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+}
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+	color: #fff;
+	background: #999;
+	border: 1px solid #999;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after {
+	color: #ff8a00;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+	color: #eee;
+	border: 1px solid #ECECEC;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+	background-color: #666;
+}
+
+.charts-instance-position-circle {
+	border-top: 50px solid #e9a049;
+}
+
+.charts h3 {
+	margin: 50px 0;
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #323232;
+	color: #eee;
+	
+}
+
+.table>thead>tr>th {
+	border-bottom: 2px solid #ccc!important;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	border-bottom: 0;
+	border-top: 0;
+}
+
+.odd {
+	background-color: rgba(255,255,255,.052)!important;
+	border-top: 1px solid #242424;
+	border-bottom: 1px solid #242424;
+}
+
+.charts .col {
+	border: 0 1px solid #ccc;
+}
+
+.charts .media-object {
+	height: 150px;
+	width: 100px;
+}
+
+#globStats h3 {
+	color: #eee;
+}
+
+.tab-content .chart{
+	margin-bottom: 50px;
+}
+
+.tab-content .col {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.tab-content .row h3, .history-charts-header h3 {
+	text-align: center;
+}
+
+.totalTime h5 {
+	border: 0;
+	box-shadow: none;
+	margin: 0 5px;
+	background-color: #e9a049;
+}
+
+#recentlyWatched .platformImage {
+	margin: 20px 0;
+}
+
+.fileStats h3, .history-charts-header h3 {
+	color: #eee;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+	background-color: rgba(255,255,255,.05);
+	border: 1px solid #343434;
+	color: #eee;
+}
+
+.nav-tabs>li>a:hover {
+	background-color: rgba(255,255,255,.05);
+	border: 1px solid #343434;
+	color: #eee;
+}
+
+@media (min-width: 768px) {
+	.navbar-default .container {
+		width: 750px;
+	}
+	
+}
+@media (min-width: 992px) {
+	.navbar-default .container {
+		width: 970px;
+	}
+	.well {
+		padding: 40px 20px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.navbar-default .container {
+		width: 1170px;
+	}
+	.well {
+		padding: 40px 60px!important;
+	}
+	input[type="text"],
+	input[type="search"],
+	input[type="password"],
+	select {
+		height: 30px;
+	}
+	body {
+		letter-spacing: 0;
+	}
+}
+
+.login-form {
+	background: #1f1f1f;
+}
+
+.login p {
+	font-size: 18px;
+	color: #eee;
+	margin-top: 20px;
+}
+
+.dropdown-menu>li>a, .dropdown-menu {
+  background: #141312;
+  color: #eee;
+}
+
+.avatar {
+  background: #999;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #343434;
+}
+
+.user-avatar {
+	background: #ccc;
+}
+
+div.ex-tooltip {
+	position: absolute;
+	background-color: #292929;
+	padding: 5px;
+	border-radius: 5px;
+	display: none;
+	color: #ccc;
+}
+
+.carousel-control.left, .carousel-control.right {
+	display: none;
+}
+
+.carousel-control {
+	opacity: 1;
+}
+
+.carousel-inner .chart-info {
+	width: 70.5%;
+	height: 130px;
+}
+.carousel-inner .charts-number {
+	background: rgba(255, 157, 46, 0.7);
+	top: 0;
+	right: 0;
+	margin: 0;
+	height: 130px;
+	width: 100px;
+	text-align: center;
+	z-index: 2;
+}
