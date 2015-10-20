@@ -19,18 +19,11 @@ class activity {
 	
 	function sessionProgressView($option = "default") {
 		global $plexServer;
-		if (file_exists(dirname(__FILE__) . '/lang.php')) {
-			require_once(dirname(__FILE__) . '/lang.php');
-		}
-		else {
-			die("File lang.php not found.");
-		}
 		$i = 1;
 		$iTotal =1;
 		$output = '';
 		if($plexServer->sessions("count") == "0") {
 			$string1 = $plexServer->lang()->activity->noCurrentWatch;
-			$output .= "<div class='alert alert-info' role='alert'>".$string1."</div>";
 			if(isset($_GET['xml'])) {
 				if($_GET['xml'] == "sessions") {
 					header('Content-Type: application/xml');
