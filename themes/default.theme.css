@@ -447,3 +447,8 @@ div.text-input {
 	text-align: center;
 	z-index: 2;
 }
+
+.nav-transparent {
+	background: rgba(50,50,50,0.5);
+	box-shadow: none;
+}

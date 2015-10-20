@@ -246,7 +246,8 @@ table.dataTable thead .sorting_desc_disabled:after {
 	border-top: 0;
 }
 
-.odd {
+.odd,
+.table-striped>tbody>tr:nth-of-type(odd) {
 	background-color: rgba(255,255,255,.052)!important;
 	border-top: 1px solid #242424;
 	border-bottom: 1px solid #242424;
@@ -395,4 +396,9 @@ div.ex-tooltip {
 	width: 100px;
 	text-align: center;
 	z-index: 2;
+}
+
+.nav-transparent {
+	background: rgba(0,0,0,0.5);
+	box-shadow: none;
 }

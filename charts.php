@@ -156,7 +156,7 @@ else {
 				</div>
 			</div>
 			<div class='col-xs-12 col-sm-6 col-md-6 col-lg-6'>
-				<h3><?php echo $plexServer->lang()->charts->top10Series; ?></h3>
+				<h3><?php echo $plexServer->lang()->charts->top10Episodes; ?></h3>
 				 <div id="top10episodes" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				  <ol class="carousel-indicators">

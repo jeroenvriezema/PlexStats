@@ -140,11 +140,11 @@ else {
 					"'>" +
 					"<div class='session-item'><div class='session-thumbnail'><img class='thumbnail' src='" +
 					x[i].getElementsByTagName("platformImage")[0].childNodes[0].nodeValue +
-					"'><a href='" +
+					"'><div class='session-title-wrap'><a href='" +
 					x[i].getElementsByTagName("url")[0].childNodes[0].nodeValue +
 					"'><h4>" +
 					x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
-					"</h4></a><h5>" +
+					"</h4></a></div><h5>" +
 					x[i].getElementsByTagName("user")[0].childNodes[0].nodeValue +
 					"</h5><a href='" +
 					x[i].getElementsByTagName("url")[0].childNodes[0].nodeValue +

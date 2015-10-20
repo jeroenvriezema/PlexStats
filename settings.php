@@ -81,7 +81,7 @@ else {
 			<ul class='list-unstyled indent'>
 				<li>
 					<?php echo $plexServer->lang()->settings->watchWebVersion; ?>:
-					<strong>v1.0.0 (master)</strong>
+					<strong>v1.0.1 (master)</strong>
 				</li>
 			
 				<?php

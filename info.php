@@ -37,7 +37,7 @@ else {
   <body>
 	<?php echo $plexServer->auth("history.php?"); ?>
 	<div class="container">
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default nav-transparent">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -51,7 +51,7 @@ else {
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li><a href="index.php"><?php echo $plexServer->lang()->menu->home; ?></a>
-						<li class="active"><a href="history.php"><?php echo $plexServer->lang()->menu->history; ?></a></li>
+						<li><a href="history.php"><?php echo $plexServer->lang()->menu->history; ?></a></li>
 						<li><a href="stats.php"><?php echo $plexServer->lang()->menu->stats; ?></a></li>
 						<li><a href="users.php"><?php echo $plexServer->lang()->menu->users; ?></a></li>
 						<li><a href="charts.php"><?php echo $plexServer->lang()->menu->charts; ?></a></li>

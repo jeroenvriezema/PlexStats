@@ -579,7 +579,7 @@ class plexServer {
 			$query = $db->query("SELECT title, user, platform, time, stopped, ip_address, xml, paused_counter, strftime('%Y%m%d', datetime(time, 'unixepoch', 'localtime')) as date FROM $plexWatchDbTable WHERE session_id LIKE '%/metadata/".$item."\_%' ESCAPE '\' ORDER BY time DESC");
 		}
 		if($option == "itemMovie") {
-			$query = $db->query("SELECT title,time,user,orig_title,orig_title_ep,episode,season,xml,datetime(time, 'unixepoch') AS time, COUNT(*) AS play_count FROM $plexWatchDbTable WHERE orig_title LIKE \"".$item."\" GROUP BY title HAVING play_count > 0 ORDER BY play_count DESC,time DESC LIMIT 7");
+			$query = $db->query("SELECT title, user, platform, time, stopped, ip_address, xml, paused_counter, strftime('%Y%m%d', datetime(time, 'unixepoch', 'localtime')) as date FROM $plexWatchDbTable WHERE title = '".$item."' ORDER BY time DESC");
 		}
 		if($option == "itemSeason") {
 			$query = $db->query("SELECT * FROM $plexWatchDbTable WHERE season ='".$item."' ORDER BY time DESC");
@@ -643,8 +643,13 @@ class plexServer {
 						$platformImage = $image;
 						break;
 					}
-					else if(preg_match("/TV [a-z][a-z]\d\d[a-z]/i", $platform)) {
-						$output[$i]['platformImage'] = "images/platforms/samsung.png";
+					else if(preg_match("/TV [a-z][a-z]\d\d[a-z]/i", $xml->Player['platform'])) {
+						$platformImage = "images/platforms/samsung.png";
+						break;
+					}
+					else if($xml->Player['platform'] == "Samsung") {
+						$platformImage = "images/platforms/samsung.png";
+						break;
 					}
 					else {
 						$platformImage = "images/platforms/default.png";
@@ -1073,11 +1078,11 @@ class plexServer {
 					}
 					$output .= "<h6 class='charts-number'>".$num_rows."</h6>
 									
-									<a href='".$link."'>
-										<img class='chart-thumb' src='".$thumb."'>
+									<a class='chart-thumb' href='".$link."'>
+										<img src='".$thumb."'>
 									</a>
 									<div class='chart-info'>
-									<a href='".$link."'><h4 class='chart-title'>".$title."</h4></a>
+									<a class='chart-title' href='".$link."'><h4>".$title."</h4></a>
 									<h5>".$title2."</h5>
 									<h6>".$views."</h6>
 									</div></div>";
@@ -1322,7 +1327,12 @@ class plexServer {
 	    $platformXml = $platformResultsRow['xml'];
 			$platformXmlField = simplexml_load_string($platformXml);
 			
-			$output[$i]['platform'] = $platformXmlField->Player['platform'];
+			if($platformXmlField->Player['platform'] == "Samsung") {
+				$output[$i]['platform'] = "Samsung TV";
+			}
+			else {
+				$output[$i]['platform'] = $platformXmlField->Player['platform'];
+			}
 			$output[$i]['count'] = $platformResultsRow['platform_count'];
 			
   	  foreach ($this->arrays("platformImage") as $platform => $image) {
@@ -1330,9 +1340,13 @@ class plexServer {
     			$output[$i]['platformImage'] = $image;
     			break;
     		}
-    		else if(preg_match("/TV [a-z][a-z]\d\d[a-z]/i", $platform)) {
+    		else if(preg_match("/TV [a-z][a-z]\d\d[a-z]/i", $platformXmlField->Player['platform'])) {
     		  $output[$i]['platformImage'] = "images/platforms/samsung.png";
+			  break;
     		}
+			else if($platformXmlField->Player['platform'] == "Samsung") {
+				$output[$i]['platformImage'] = "images/platforms/samsung.png";
+			}
     		else {
     			$output[$i]['platformImage'] = "images/platforms/default.png";
     		}
@@ -1596,7 +1610,7 @@ class plexServer {
 		$infoUrl = $this->plexURL()."/library/metadata/".$item;
 		$xml = simplexml_load_string(file_get_contents($infoUrl));
 		$numRows = $db->querySingle("SELECT COUNT(*) as count FROM $plexWatchDbTable WHERE session_id LIKE '%/metadata/".$item."\_%' ESCAPE '\' ORDER BY time DESC");
-		if($numRows == 0 OR empty($xml)) {
+		if(empty($xml)) {
 			$output = "<div class='summary'><H1 style='position: absolute; bottom: 0;'>".$this->lang()->errors->notAvailable."</H1></div>";
 		}
 		else {
@@ -1641,7 +1655,7 @@ class plexServer {
 			}
 			else if ($xml->Directory['type'] == "show") {
 				$xmlArtUrl = "".$this->plexURL()."/photo/:/transcode?url=http://127.0.0.1:".$plexWatch['pmsHttpPort']."".$xml->Directory['art']."&width=1920&height=1080";
-				$xmlThumbUrl = "".$this->plexURL()."/photo/:/transcode?url=http://127.0.0.1:".$plexWatch['pmsHttpPort']."".$xml->Directory['thumb']."&width=256&height=352";
+				$xmlThumbUrl = "".$this->plexURL()."/photo/:/transcode?url=http://127.0.0.1:".$plexWatch['pmsHttpPort']."".$xml->Directory['thumb']."&width=456&height=552";
 				
 				if($xml->Directory['art']) {
 					$poster = "includes/img.php?img=".urlencode($xmlArtUrl);

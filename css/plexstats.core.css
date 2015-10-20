@@ -76,13 +76,10 @@ div.ex-tooltip {
 }
 
 .session-thumbnail h4 {
-	position: absolute;
-	bottom: 25px;
 	margin: 0;
 	padding: 5px;
-	width: 100%;
-	background: rgba(0,0,0,0.5);
-	z-index: 50;
+	width: 80%;
+
 	color: #fff;
 }
 .session-thumbnail h5 {
@@ -354,7 +351,7 @@ ul.legend li {
 }
 
 .noscroll {
-	overflow-x: hidden!important; 
+	overflow-x: hidden!important;
     overflow-y: hidden!important;
 }
 
@@ -478,8 +475,8 @@ background-color: rgba(0,0,0,0.7);
 .carousel-inner .chart-info {
 	width: 80%;
 	position: absolute;
-	right: 0;
 	bottom: 0;
+	right: 0;
 	background: rgba(0,0,0, 0.5);
 	padding: 20px;
 	color: #fff;
@@ -505,8 +502,12 @@ background-color: rgba(0,0,0,0.7);
 	font-size: 50px;
 }
 
-.carousel-inner .chart-title {
+.chart-title {
 	font-size: 20px;
+	display: block;
+}
+
+.chart-title h4 {
 }
 
 .setup-page {
@@ -570,4 +571,17 @@ i.setup-success {
 	color: #fff;
 	padding: 10px;
 	border-radius: 50%;
+}
+
+.session-title-wrap {
+  width: 100%;
+  position: absolute;
+	bottom: 25px;
+	background: rgba(0,0,0,0.5);
+	z-index: 50;
+}
+
+.nav-transparent {
+	background: rgba(0,0,0,0.5);
+	box-shadow: none;
 }
