@@ -1,6 +1,4 @@
-#This project is discontinued
-
-# plexstats
+# plexstats (Discontinued)
 PlexStats is a fork of the well known plexWatchWeb. It features all the same functions as plexWatchWeb, 
 but there are some major changes comparing the two.
 
